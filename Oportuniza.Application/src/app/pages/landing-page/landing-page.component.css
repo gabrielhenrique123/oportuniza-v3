@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
 
-body, ul, li, h1, p {
+body,
+ul,
+li,
+h1,
+p {
   margin: 0;
   padding: 0;
   font-family: Montserrat;
@@ -9,7 +13,6 @@ body, ul, li, h1, p {
 body {
   margin: 0;
 }
-
 
 header {
   position: absolute;
@@ -52,15 +55,11 @@ header nav ul li a {
 }
 
 .menu-right a {
+  font-size: 18px;
   color: white;
   text-decoration: none;
   margin-right: 50px;
   font-weight: 500;
-}
-
-.menu-right a:hover {
-  background: white;
-  color: black;
 }
 
 .hero {
@@ -68,6 +67,16 @@ header nav ul li a {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .background-video {
@@ -80,15 +89,34 @@ header nav ul li a {
   z-index: -1;
 }
 
-
 .hero-content {
-  margin-top: 30%;
+  position: relative;
+  margin-top: 12%;
   z-index: 1;
   color: white;
-  text-align: center;
+  text-align: left;
+  left: 60px;
   padding: 20px;
 }
 
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  max-width: 40%;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 40%;
+}
+
+.hero-content a {
+  background: #2E3FFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+
 }
