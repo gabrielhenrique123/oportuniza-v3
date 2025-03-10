@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
+import { HeroComponent } from './hero/hero.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { ComofuncionaComponent } from './comofunciona/comofunciona.component';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [],
+  imports: [HeaderComponent, HeroComponent, SobreComponent, ComofuncionaComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

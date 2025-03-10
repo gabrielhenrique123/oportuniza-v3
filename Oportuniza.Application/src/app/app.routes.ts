@@ -3,5 +3,6 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 
 export const routes: Routes = [
   { path: '', component: LandingPageComponent },
+  
 ];
 

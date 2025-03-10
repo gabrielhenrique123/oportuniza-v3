@@ -1,0 +1,48 @@
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  padding: 0;
+}
+
+header nav img {
+  width: 100px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  justify-content: space-around;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 100px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu-right a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-weight: 500;
+}
