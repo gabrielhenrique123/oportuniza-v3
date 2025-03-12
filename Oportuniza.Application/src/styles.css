@@ -3,3 +3,8 @@
 * {
   font-family: Montserrat;
 }
+
+body {
+  margin: 0;
+  background-color: #F4F5FE;
+}

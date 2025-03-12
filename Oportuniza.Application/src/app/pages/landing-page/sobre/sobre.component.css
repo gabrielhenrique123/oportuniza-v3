@@ -1,6 +1,5 @@
 
-
-img {
+.img {
   width: 100%;
   margin: 0;
 }
@@ -33,7 +32,7 @@ img {
   color: #333;
   margin-bottom: 20px;
   text-align: justify;
-  width: 70%;
+  width: 75%;
 }
 
 .botao {
