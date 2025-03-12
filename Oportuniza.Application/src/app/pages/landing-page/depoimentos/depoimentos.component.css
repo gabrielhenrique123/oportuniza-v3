@@ -1,0 +1,68 @@
+.depoimentos {
+  text-align: center;
+  padding: 50px;
+}
+
+.depoimentos h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.carrossel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 100%;
+  width: 50px;
+  height: auto;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.info-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-text .stars {
+  color: gold;
+  font-size: 18px;
+  margin: 2px 0 0;
+}
+
+.texto {
+  text-align: justify;
+  margin: 20px;
+  font-family: Radio canada;
+  font-size: 14px;
+  color: #333;
+}
