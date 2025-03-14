@@ -1,11 +1,14 @@
+
 .depoimentos {
   text-align: center;
   padding: 50px;
+  margin-bottom: 40px;
 }
 
 .depoimentos h2 {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 60px;
 }
 
