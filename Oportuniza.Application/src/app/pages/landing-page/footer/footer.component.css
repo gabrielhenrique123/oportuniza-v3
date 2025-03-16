@@ -2,5 +2,86 @@
 footer {
   background-color: black;
   height: 100%;
-  padding: 20px;
+  padding: 50px;
+  color: white;
+}
+
+.containerfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+
+.links {
+  text-align: center;
+}
+
+.links h1 {
+  font-size: 16px;
+}
+
+.miniNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.miniNav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.miniNav ul li:last-child {
+  display: block;
+  margin-top: 10px;
+}
+
+.miniNav ul li a {
+  color: inherit;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+.info {
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 16px;
+}
+
+.organização {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.organização p {
+  display: inline;
+  margin: 5px;
+}
+
+.organização img {
+  width: 20px;
+  height: 20px;
 }
