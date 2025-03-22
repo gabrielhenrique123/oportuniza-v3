@@ -23,7 +23,9 @@
     "@angular/ssr": "^19.1.8",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
+    "swiper": "^11.2.5",
     "tslib": "^2.3.0",
+    "vite": "^6.2.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
