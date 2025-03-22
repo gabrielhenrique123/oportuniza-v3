@@ -1,11 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent {
+  lastScrollTop = 0;
+  isHeaderHidden = false;
+  scrollThreshold = 100;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > this.lastScrollTop && scrollTop > this.scrollThreshold) {
+      this.isHeaderHidden = true;
+    } else if (scrollTop < this.lastScrollTop) {
+      this.isHeaderHidden = false;
+    }
+
+    this.lastScrollTop = scrollTop;
+  }
 
 }

@@ -1,4 +1,3 @@
-
 header {
   position: fixed;
   top: 0;
@@ -10,6 +9,11 @@ header {
   backdrop-filter: blur(5.8px);
   -webkit-backdrop-filter: blur(5.8px);
   padding: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
 }
 
 header nav img {
@@ -46,3 +50,6 @@ header nav ul li a {
   margin-right: 50px;
   font-weight: 500;
 }
+
+
+
