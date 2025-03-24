@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-vagas',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './vagas.component.html',
   styleUrl: './vagas.component.css'
 })
