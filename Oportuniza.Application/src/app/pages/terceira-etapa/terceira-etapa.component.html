@@ -1,0 +1,50 @@
+<div class="overlay"></div>
+<div class="container">
+  <div class="center-content">
+    <div class="head">
+      <div class="step1">
+        <span></span>
+        <p>1° Etapa</p>
+      </div>
+      <div class="step2">
+        <span></span>
+        <p>2° Etapa</p>
+      </div>
+      <div class="step3">
+        <span></span>
+        <p>3° Etapa</p>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="title">COMPLETE SEU PERFIL</div>
+      <div class="center">
+        <div class="title">
+          <p>Selecione suas categorias de interesse:</p>
+        </div>
+        <div class="right">
+          <div class="custom-select">
+            <select id="areas-select" class="styled-select">
+              <option value="" disabled selected>Selecione uma área...</option>
+              <option value="baba">Babá</option>
+              <option value="açougueiro">Açougueiro</option>
+              <option value="balconista">Balconista</option>
+              <option value="motorista">Motorista</option>
+              <option value="entregador">Entregador</option>
+              <option value="garçom">Garçom</option>
+              <option value="zelador">Zelador</option>
+              <option value="atendente">Atendente</option>
+              <option value="enfermeiro">Enfermeiro</option>
+              <option value="outro">Outros</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="send-button">
+        <button [routerLink]="['/segunda-etapa']">Voltar</button>
+        <button [routerLink]="['/terceira-etapa']">Concluir</button>
+      </div>
+      <div class="send"></div>
+    </div>
+    <div class="footer"></div>
+  </div>
+</div>
