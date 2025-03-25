@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+
 @Component({
-  selector: 'app-sobre',
+  selector: 'app-termo',
   imports: [RouterModule],
-  templateUrl: './sobre.component.html',
-  styleUrl: './sobre.component.css'
+  templateUrl: './termo.component.html',
+  styleUrl: './termo.component.css'
 })
-export class SobreComponent {
+export class TermoComponent {
 
 }

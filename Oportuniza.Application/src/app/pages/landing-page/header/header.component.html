@@ -1,6 +1,6 @@
 <header [ngClass]="{ 'header-hidden': isHeaderHidden }">
   <nav>
-    <img src="assets/imglanding/logo.png" alt="Logo da empresa" />
+    <img src="assets/logo.png" alt="Logo da empresa" />
 
     <ul>
       <li><a href="#inicio">Início</a></li>
@@ -10,8 +10,8 @@
     </ul>
 
     <div class="menu-right">
-      <a href="#" class="btn">Cadastre-se agora</a>
-      <a href="#">Entrar</a>
+      <a  [routerLink]="['/cadastro']" class="btn" role="button">Cadastre-se agora</a>
+      <a  [routerLink]="['/login']">Entrar</a>
     </div>
 
   </nav>
