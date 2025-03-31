@@ -91,11 +91,13 @@ input:focus {
 
 .forgot-password {
   color: #007BFF;
-  text-align: right;
   font-size: 14px;
+  margin-top: 5px;
   margin-bottom: 15px;
   cursor: pointer;
   text-decoration: none;
+  text-align: right; 
+  width: 100%; 
 }
 
 .forgot-password:hover {
@@ -129,7 +131,7 @@ input:focus {
   margin-bottom: 10px;
 }
 
-.btn-google {
+.btn-microsoft {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,7 +140,7 @@ input:focus {
   margin-bottom: 20px;
 }
 
-.btn-google img {
+.btn-microsoft img {
   width: 30px;
 }
 

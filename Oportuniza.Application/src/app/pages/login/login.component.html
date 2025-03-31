@@ -16,7 +16,7 @@
       </div>
 
       <div class="input-container password-container">
-          <input [type]="passwordVisible ? 'text' : 'password'" id="password" placeholder="Senha">
+          <input maxlength="20" [type]="passwordVisible ? 'text' : 'password'" id="password" placeholder="Senha">
           <button class="show-password" (click)="togglePassword()">
               <img [src]="passwordVisible ? 'assets/cadastro/openeye.png' : 'assets/cadastro/closeeye.png'" alt="Ícone de mostrar senha">
           </button>
@@ -28,8 +28,12 @@
 
       <p class="or-text">Entrar com:</p>
 
-      <button class="btn-google">
-          <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google">
+   
+      <button class="btn-microsoft">
+        <img
+          src="https://blog.topedia.com/wp-content/uploads/2020/05/Microsoft_Logo.png"
+          alt="Microsoft"
+        />
       </button>
 
       <p class="register-text">

@@ -157,7 +157,7 @@ input:focus {
 }
 
 
-.btn-google {
+.btn-microsoft {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,6 +166,6 @@ input:focus {
   margin-bottom: 15px;
 }
 
-.btn-google img {
+.btn-microsoft img {
   width: 30px;
 }

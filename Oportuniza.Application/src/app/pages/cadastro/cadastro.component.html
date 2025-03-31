@@ -17,7 +17,7 @@
     <h2>Cadastrar</h2>
 
     <div class="input-container">
-      <input type="email" placeholder="E-mail" [(ngModel)]="email" />
+      <input type="email" placeholder="E-mail" [(ngModel)]="email" maxlength="100" />
     </div>
 
     <div class="input-container password-container">
@@ -26,6 +26,7 @@
         id="password"
         placeholder="Senha"
         [(ngModel)]="password"
+        maxlength="20"
       />
       <button class="show-password" (click)="togglePassword()">
         <img
@@ -41,15 +42,16 @@
 
     <div class="input-container password-container">
       <input
-        [type]="passwordVisible ? 'text' : 'password'"
+        [type]="confirmPasswordVisible ? 'text' : 'password'"
         id="confirmPassword"
         placeholder="Confirmar Senha"
         [(ngModel)]="confirmPassword"
+        maxlength="20"
       />
-      <button class="show-password" (click)="togglePassword()">
+      <button class="show-password" (click)="toggleConfirmPassword()">
         <img
           [src]="
-            passwordVisible
+            confirmPasswordVisible
               ? 'assets/cadastro/openeye.png'
               : 'assets/cadastro/closeeye.png'
           "
@@ -59,18 +61,17 @@
     </div>
 
     <div class="terms-container">
-      <input type="checkbox" [(ngModel)]="acceptTerms" />
-      <a [routerLink]="['/termo']">Eu aceito os Termos de Uso e a Política de Privacidade</a>
+      <input type="checkbox" [(ngModel)]="acceptTerms" (change)="saveTermsAcceptance()" />
+      <p>Eu aceito os  <a href="/termo" style="color: blue;">Termos de Uso</a> e a  <a href="/termo" style="color: blue;">Política de Privacidade</a></p>
     </div>
 
-    <button [routerLink]="['/primeira-etapa']" class="btn-primary" (click)="register()">Cadastrar</button>
-
+    <button class="btn-primary" (click)="register()">Cadastrar</button>
     <p class="or-text">Entrar com:</p>
 
-    <button class="btn-google">
+    <button class="btn-microsoft">
       <img
-        src="https://cdn-icons-png.flaticon.com/128/300/300221.png"
-        alt="Google"
+        src="https://blog.topedia.com/wp-content/uploads/2020/05/Microsoft_Logo.png"
+        alt="Microsoft"
       />
     </button>
 
