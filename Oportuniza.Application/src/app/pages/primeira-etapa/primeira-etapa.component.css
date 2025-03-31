@@ -20,6 +20,11 @@
   width: 100px;
 }
 
+button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 
 .container{
   background-image: url("../../../assets/etapas/background.png");

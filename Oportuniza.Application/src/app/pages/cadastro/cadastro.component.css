@@ -127,35 +127,40 @@ input:focus {
 .register-text a:hover {
   text-decoration: underline;
 }
-
 .terms-container {
   display: flex;
-  gap: 1em;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
   font-size: 14px;
   color: #333;
+  margin-top: 0%;
   margin-bottom: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .terms-container input {
-  margin: 0;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
 }
 
-.terms-container a {
-  font-size: 13px;
+.terms-text {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+  font-size: 14px;
+  color: #000;
+}
+
+.terms-text a {
   color: #2E3FFF;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
+  margin-left: 4px;
 }
 
-.terms-container a:hover {
+.terms-text a:hover {
   text-decoration: underline;
 }
-
 
 .btn-microsoft {
   display: flex;
